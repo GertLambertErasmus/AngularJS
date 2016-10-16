@@ -9,10 +9,10 @@
     $scope.Message = "";
     $scope.TextInput = "";
 
-    $scope.ShowMessage = function () {
+    $scope.ShowMessage = function () {  //work on this to include checks for spaces , ,
       var inputList = $scope.TextInput.split(',');
 
-      if ($scope.TextInput == "") {  //work on this to include checks for spaces , ,
+      if ($scope.TextInput == "") {
           $scope.Message = "Please enter data first!";
       }
       else if (inputList.length <= 3) {
